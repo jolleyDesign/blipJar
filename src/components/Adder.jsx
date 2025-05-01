@@ -12,16 +12,16 @@ export default function Adder() {
             
             <div className="adder-action-bar">
                 <button id="critical-button">
-                    <ClockAlert size={20} className="icon-button"/>
+                    <ClockAlert size={16} className="icon-button"/>
                 </button>
                 <button id="backburner-button">
-                    <Shell size={20} className="icon-button"/>
+                    <Shell size={16} className="icon-button"/>
                 </button>
                 <button id="scheduled-button">
-                    <Calendar size={20} className="icon-button"/>
+                    <Calendar size={16} className="icon-button"/>
                 </button>
                 <button type="submit" id="adder-button">
-                    <Plus size={24} />
+                    <Plus size={20} />
                 </button>
             </div>
 
