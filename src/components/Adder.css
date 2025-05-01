@@ -1,14 +1,17 @@
 .adder {
-    display: grid;
-    font: inherit;
+    display: flex;
+    background: light-dark(white, var(--gray-7));
+    border-radius: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
 }
 
 .adder input {
-    padding: 1rem;
-    background: var(--gray-7);
+    background: transparent;
     outline: none;
     border: none;
-    border-radius: 1rem;
+    font: inherit;
+    flex-grow: 1;
 }
 
 .adder button {
@@ -19,4 +22,10 @@
     border-radius: 1rem;
     align-items: center;
     justify-content: center;
+    transition: 0.1s ease;
+}
+
+#adder-button:hover {
+    background: var(--blue-3);
+    transition: 0.1s ease;
 }
