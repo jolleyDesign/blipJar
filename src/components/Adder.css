@@ -1,0 +1,22 @@
+.adder {
+    display: grid;
+    font: inherit;
+}
+
+.adder input {
+    padding: 1rem;
+    background: var(--gray-7);
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+}
+
+.adder button {
+    display: flex;
+    background: var(--blue-4);
+    padding: 4px 1rem;
+    font: inherit;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+}
