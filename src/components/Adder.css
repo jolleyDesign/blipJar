@@ -14,7 +14,7 @@
     flex-grow: 1;
 }
 
-.adder button {
+#adder-button {
     display: flex;
     background: var(--blue-4);
     padding: 4px 1rem;
@@ -28,4 +28,16 @@
 #adder-button:hover {
     background: var(--blue-3);
     transition: 0.1s ease;
+}
+
+.adder-action-bar {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.adder-action-bar .icon-button {
+    color: var(--gray-4);
+    stroke: var(--gray-4);
 }
