@@ -1,5 +1,6 @@
 import "./Adder.css"
-import { Plus } from "lucide-react"
+import Button from "./Button"
+import { Clock, Plus } from "lucide-react"
 import { Calendar } from "lucide-react"
 import { Shell } from "lucide-react"
 import { ClockAlert } from "lucide-react"
@@ -11,20 +12,12 @@ export default function Adder() {
             <input type="text" className="adder-input" placeholder="Add a blip..."/>
             
             <div className="adder-action-bar">
-                <button id="critical-button">
-                    <ClockAlert size={16} className="icon-button"/>
-                </button>
-                <button id="backburner-button">
-                    <Shell size={16} className="icon-button"/>
-                </button>
-                <button id="scheduled-button">
-                    <Calendar size={16} className="icon-button"/>
-                </button>
-                <button type="submit" id="adder-button">
-                    <Plus size={20} />
-                </button>
+                <Button variant="icon-only" icon={<ClockAlert size={16}/>} id="critical-button" />
+                <Button variant="icon-only" icon={<Shell size={16}/>} id="backburner-button" />
+                <Button variant="icon-only" icon={<Calendar size={16}/>} id="scheduled-button" />
+                <Button type="submit" variant="icon" icon={<Plus size={20}/>} id="adder-button" />
             </div>
-
         </div>
-    )
+    
+)
 }

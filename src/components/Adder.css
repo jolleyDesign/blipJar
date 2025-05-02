@@ -1,5 +1,6 @@
 .adder {
     display: flex;
+    /* TODO change variables to add light, dark */
     background: light-dark(white, var(--gray-7));
     border-radius: 1rem;
     padding: 12px 16px;
@@ -19,30 +20,10 @@
     color: var(--gray-4);
 }
 
-#adder-button {
-    display: flex;
-    background: var(--blue-4);
-    padding: 4px 1rem;
-    font: inherit;
-    border-radius: 1rem;
-    align-items: center;
-    justify-content: center;
-    transition: 0.1s ease;
-}
-
-#adder-button:hover {
-    background: var(--blue-3);
-    transition: 0.1s ease;
-}
 
 .adder-action-bar {
     display: flex;
     gap: 1rem;
     justify-content: center;
     align-items: center;
-}
-
-.adder-action-bar .icon-button {
-    color: var(--gray-4);
-    stroke: var(--gray-4);
 }

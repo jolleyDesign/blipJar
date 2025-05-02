@@ -1,0 +1,30 @@
+.btn {
+    background: var(--blue-4);
+    padding: .5rem 1rem;
+    font: inherit;
+    border-radius: 999px;
+    color: var(--blue-0);
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s ease;
+}
+
+.icon {
+    display: flex;
+    background: var(--blue-4);
+    padding: 4px 1rem;
+    font: inherit;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s ease;
+}
+
+.icon-only {
+    color: var(--gray-4);
+    stroke: var(--gray-4);
+}
+
+button:disabled {
+    background: var(--blue-2);
+}
