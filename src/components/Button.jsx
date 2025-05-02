@@ -7,6 +7,7 @@ export default function Button(props) {
     const isDisabled = props.disabled ?? false
     const buttonId = props.id
     const buttonType = props.type
+    const buttonStyle = props.style
     
 
     return (
@@ -15,6 +16,7 @@ export default function Button(props) {
             isDisabled={isDisabled}
             id={buttonId}
             type={buttonType}
+            style={buttonStyle}
         >
             {buttonIcon}
             {buttonText}

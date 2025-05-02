@@ -40,3 +40,8 @@
 button:disabled {
     background: var(--blue-2);
 }
+
+.blue {
+    color: var(--blue-0);
+    stroke: var(--blue-0);
+}
