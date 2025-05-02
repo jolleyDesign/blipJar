@@ -35,9 +35,9 @@
 }
 
 .icon-only:hover {
-    color: var(--gray-6);
-    stroke: var(--gray-6);
-    background: vaR(--gray-0);
+    color: light-dark(var(--gray-6), var(--gray-2));
+    stroke: light-dark(var(--gray-6), var(--gray-2));
+    background: light-dark(var(--gray-6), var(--gray-6));
     transition: 0.1s ease;
 }
 

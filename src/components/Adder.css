@@ -1,6 +1,5 @@
 .adder {
     display: flex;
-    /* TODO change variables to add light, dark */
     background: light-dark(white, var(--gray-7));
     border-radius: 1rem;
     padding: 12px 16px;
