@@ -23,6 +23,11 @@ body {
     background: light-dark(var(--gray-1), var(--gray-9));
 }
 
+* button:hover {
+    cursor: pointer;
+}
+
+
 
 
 
