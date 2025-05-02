@@ -1,14 +1,16 @@
 // IMPORTS
 import "./Adder.css"
+import AdderInput from "./AdderInput"
 import Button from "./Button"
 import { Plus, Calendar, Shell, ClockAlert } from "lucide-react"
+import { useState } from "react"
 
 // EXPORT
 export default function Adder() {
     return (            
 
         <div className="adder shadow">
-            <input type="text" className="adder-input" placeholder="Add a blip..."/>
+            <AdderInput />
             
             <div className="adder-action-bar">
                 <Button variant="icon-only" icon={<ClockAlert size={16}/>} id="critical-button" />

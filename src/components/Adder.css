@@ -7,20 +7,6 @@
     justify-content: space-between;
 }
 
-.adder input {
-    background: transparent;
-    outline: none;
-    border: none;
-    font: inherit;
-    flex-grow: 1;
-    font-size: 14px;
-}
-
-.adder input::placeholder {
-    color: var(--gray-4);
-}
-
-
 .adder-action-bar {
     display: flex;
     gap: 1rem;
