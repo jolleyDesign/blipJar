@@ -7,9 +7,27 @@ import { useState } from "react"
 
 // EXPORT
 export default function Adder() {
+
+    const [inputValue, setValue] = useState("")
+
+    const handleChange = (event) => {
+        setValue(event.target.value);
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log("Form submitted, prevented default");
+        setValue("");
+    }
+
     return (            
-        <div className="adder shadow">
-            <AdderInput />
+        <form className="adder shadow"
+        onSubmit={handleSubmit}>
+
+            <AdderInput
+            value={inputValue}
+            onChange={handleChange}
+            />
             
             <div className="adder-action-bar">
                 <Button variant="icon-only"
@@ -29,7 +47,7 @@ export default function Adder() {
                 icon={<Plus size={20}/>}
                 id="adder-button" />
             </div>
-        </div>
+        </form>
     
 )
 }

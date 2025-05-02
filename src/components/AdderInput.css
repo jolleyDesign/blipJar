@@ -2,9 +2,7 @@
     background: transparent;
     outline: none;
     border: none;
-    font: inherit;
     flex-grow: 1;
-    font-size: 14px;
 }
 
 .adder input::placeholder {
