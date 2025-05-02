@@ -1,10 +1,9 @@
+// IMPORTS
 import "./Adder.css"
 import Button from "./Button"
-import { Clock, Plus } from "lucide-react"
-import { Calendar } from "lucide-react"
-import { Shell } from "lucide-react"
-import { ClockAlert } from "lucide-react"
+import { Plus, Calendar, Shell, ClockAlert } from "lucide-react"
 
+// EXPORT
 export default function Adder() {
     return (            
 

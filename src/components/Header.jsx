@@ -13,6 +13,7 @@ export default function Header() {
             <div className="logo-container">
                 <Logo />
             </div>
+            
             <div className="nav-container">
                 <Button variant="icon-only blue" icon={<Umbrella size={24} />} />
                 <Button variant="icon-only blue" icon={<CircleUserRound size={24} />} />

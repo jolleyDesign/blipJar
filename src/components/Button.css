@@ -1,4 +1,6 @@
 .btn {
+    display: flex;
+    gap: .5rem;
     background: var(--blue-4);
     padding: .5rem 1rem;
     font: inherit;
@@ -29,12 +31,14 @@
     color: var(--gray-4);
     stroke: var(--gray-4);
     border-radius: 1rem;
+    transition: 0.1s ease;
 }
 
 .icon-only:hover {
-    color: var(--gray-5);
-    stroke: var(--gray-5);
+    color: var(--gray-6);
+    stroke: var(--gray-6);
     background: vaR(--gray-0);
+    transition: 0.1s ease;
 }
 
 button:disabled {
@@ -44,4 +48,9 @@ button:disabled {
 .blue {
     color: var(--blue-0);
     stroke: var(--blue-0);
+}
+
+.blue:hover {
+    background: none;
+    color: white;
 }
