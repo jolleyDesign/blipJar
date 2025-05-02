@@ -3,8 +3,7 @@ import "./Header.css"
 import Logo from "./Logo"
 import Button from "./Button"
 // ICON IMPORT
-import { CircleUserRound } from "lucide-react"
-import { Umbrella } from "lucide-react"
+import { CircleUserRound, Umbrella } from "lucide-react"
 
 // MAIN FUNCTION
 export default function Header() {
