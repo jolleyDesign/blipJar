@@ -7,9 +7,28 @@ import { useState } from "react"
 
 // EXPORT
 export default function Adder() {
+
+    const [item, setItem] = useState("")
+
+    function handleChange(event) {
+        setItem(event.target.value)
+    }
+
+    function handleSubmit(event) {
+        event.preventDefault()
+        console.log(item)
+        setItem("")
+    }
+
     return (            
-        <div className="adder shadow">
-            <AdderInput />
+        <form className="adder shadow"
+        onSubmit={handleSubmit}
+        onChange={handleChange}>
+
+            <AdderInput 
+            onChange={handleChange}
+            value={item}
+            />
             
             <div className="adder-action-bar">
                 <Button variant="icon-only"
@@ -29,7 +48,7 @@ export default function Adder() {
                 icon={<Plus size={20}/>}
                 id="adder-button" />
             </div>
-        </div>
+        </form>
     
 )
 }
