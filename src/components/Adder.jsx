@@ -16,8 +16,11 @@ export default function Adder() {
 
     function handleSubmit(event) {
         event.preventDefault()
-        console.log(item)
-        setItem("")
+        if (item != "") {
+            // TODO push to database instead of logging
+            console.log(item.trim())
+            setItem("")
+        }
     }
 
     return (            
