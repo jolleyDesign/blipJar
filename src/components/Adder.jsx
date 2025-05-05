@@ -8,25 +8,26 @@ import { useState } from "react"
 // EXPORT
 export default function Adder() {
 
-    const [inputValue, setValue] = useState("")
+    const [item, setItem] = useState("")
 
-    const handleChange = (event) => {
-        setValue(event.target.value);
+    function handleChange(event) {
+        setItem(event.target.value)
     }
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        console.log("Form submitted, prevented default");
-        setValue("");
+    function handleSubmit(event) {
+        event.preventDefault()
+        console.log(item)
+        setItem("")
     }
 
     return (            
         <form className="adder shadow"
-        onSubmit={handleSubmit}>
+        onSubmit={handleSubmit}
+        onChange={handleChange}>
 
-            <AdderInput
-            value={inputValue}
+            <AdderInput 
             onChange={handleChange}
+            value={item}
             />
             
             <div className="adder-action-bar">
